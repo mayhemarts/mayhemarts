@@ -418,7 +418,7 @@ const Portfolio = () => {
 		{
 			id:4,
 			types: ["portfolio_media"],
-			video: "https://www.youtube.com/watch?v=-VdgC-D12Y0",
+			video: "https://www.youtube.com/embed/-VdgC-D12Y0?si=Y6l8xWd6uncwCB9a",
 			image: videoQuadcam?.src,
 			tags: "Video & Audio / Eblast",
 
@@ -432,7 +432,7 @@ const Portfolio = () => {
 		{
 			id:5,
 			types: ["portfolio_media"],
-			video: "https://www.youtube.com/shorts/ZWIj7kIMN2E",
+			video: "https://www.youtube.com/embed/ZWIj7kIMN2E",
 			image: videoSg7?.src,
 			tags: "Video / Social Media",
 
@@ -1137,7 +1137,7 @@ const Portfolio = () => {
 							style={{ position: "relative" }}
 							width="100%" 
 							height="100%" 
-							src="{selectedVideo}" 
+							src={selectedVideo} 
 							title="YouTube video player" 
 							frameborder="0" 
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

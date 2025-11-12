@@ -23,10 +23,10 @@ const CustomModal = ({
       borderRadius: "3px",
       maxWidth: containsImageExtension ? "100%" : "100%",
       // maxHeight: '80%',
-      height: "55%",
+      height: "80%",
       width:
         (containsImageExtension || (isMobile && !containsImageExtension)) &&
-        "100%",
+        "60%",
       overflow: "hidden",
       border: "none",
       padding: 0,
