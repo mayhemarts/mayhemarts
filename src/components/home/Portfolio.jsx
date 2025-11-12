@@ -1133,14 +1133,17 @@ const Portfolio = () => {
 				{selectedVideo && (
 					<div className="h-100 text-center">
 
-						{ selectedVideo && <iframe
+						{ selectedVideo && <iframe 
 							style={{ position: "relative" }}
-							title="Vimeo Video"
-							src={selectedVideo}
-							width="100%"
-							height="100%"
-							allowFullScreen
-						></iframe> }
+							width="100%" 
+							height="100%" 
+							src="{selectedVideo}" 
+							title="YouTube video player" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+							referrerpolicy="strict-origin-when-cross-origin" 
+							allowfullscreen>
+						</iframe> }
 
 						<div className="text-white" style={{ padding:'20px' }}>
 							<h1 className="text-white mb-4">{selectedTitle}</h1>
