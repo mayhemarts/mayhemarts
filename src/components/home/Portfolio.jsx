@@ -1062,7 +1062,7 @@ const Portfolio = () => {
 									<motion.div
 										key={portfolio?.id}
 										style={{ transformOrigin: "left bottom" }}
-										className="col-6 col-md-4 portfolio-item design_portfolio brand_portfolio"
+										className="col-6 col-md-4"
 										layout
 										initial={{ opacity: 0, rotate: -20 }}
 										animate={{ opacity: 1, rotate: 0 }}
@@ -1097,7 +1097,7 @@ const Portfolio = () => {
 								) : (
 									<motion.div
 										style={{ transformOrigin: "left bottom" }}
-										className="col-6 col-md-4 portfolio-item html_portfolio graphics_portfolio brand_portfolio"
+										className="col-6 col-md-4"
 										key={portfolio?.id}
 										layout
 										initial={{ opacity: 0, rotate: -20 }}
@@ -1132,33 +1132,34 @@ const Portfolio = () => {
 			>
 				{selectedVideo && (
 					<div className="h-100 text-center">
+						<div style={{ position: "relative", textAlign:"center", maxWidth:"800px" }}>
+							<iframe 
+								style={{ position: "relative", padding:'20px' }}
+								width="800" 
+								height="417" 
+								src={selectedVideo} 
+								title="YouTube video player" 
+								frameborder="0" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+								referrerpolicy="strict-origin-when-cross-origin" 
+								allowfullscreen>
+							</iframe>
 
-						{ selectedVideo && <iframe 
-							style={{ position: "relative" }}
-							width="100%" 
-							height="100%" 
-							src={selectedVideo} 
-							title="YouTube video player" 
-							frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-							referrerpolicy="strict-origin-when-cross-origin" 
-							allowfullscreen>
-						</iframe> }
-
-						<div className="text-white" style={{ padding:'20px' }}>
-							<h1 className="text-white mb-4">{selectedTitle}</h1>
-							<p style={{ color:"#dfdfdf" }}>{selectedCopy}</p>
-							{ selectedDate && <p style={{ color:"#a0a0a0", fontSize:"80%" }}>{selectedDate}</p> }
-							{ selectedClient && <p style={{ color:"#adadad", fontSize:"80%" }}>Client: {selectedClient}</p> }
-						</div>
+							<div className="text-white" style={{ padding:'20px' }}>
+								<h1 className="text-white mb-4">{selectedTitle}</h1>
+								<p style={{ color:"#dfdfdf" }}>{selectedCopy}</p>
+								{ selectedDate && <p style={{ color:"#a0a0a0", fontSize:"80%" }}>{selectedDate}</p> }
+								{ selectedClient && <p style={{ color:"#adadad", fontSize:"80%" }}>Client: {selectedClient}</p> }
+							</div>
 						
-						<button
-							className="mfp-close"
-							onClick={closeModal}
-							style={{ position: "absolute" }}
-						>
-							&times;
-						</button>
+							<button
+								className="mfp-close"
+								onClick={closeModal}
+								style={{ position: "absolute" }}
+							>
+								&times;
+							</button>
+						</div>
 					</div>
 				)}
 
