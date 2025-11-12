@@ -418,7 +418,7 @@ const Portfolio = () => {
 		{
 			id:4,
 			types: ["portfolio_media"],
-			video: "https://youtu.be/-VdgC-D12Y0",
+			video: "https://www.youtube.com/watch?v=-VdgC-D12Y0",
 			image: videoQuadcam?.src,
 			tags: "Video & Audio / Eblast",
 
@@ -432,7 +432,7 @@ const Portfolio = () => {
 		{
 			id:5,
 			types: ["portfolio_media"],
-			video: "https://youtube.com/shorts/ZWIj7kIMN2E",
+			video: "https://www.youtube.com/shorts/ZWIj7kIMN2E",
 			image: videoSg7?.src,
 			tags: "Video / Social Media",
 
