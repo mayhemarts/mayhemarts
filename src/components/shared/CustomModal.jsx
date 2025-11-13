@@ -18,15 +18,15 @@ const CustomModal = ({
       top: "50%",
       left: "50%",
       transform: "translate(-50%, -50%)",
-      backgroundColor: containsImageExtension ? "transparent" : "black",
+      backgroundColor: "transparent",
       // padding: '20px',
       borderRadius: "3px",
-      maxWidth: containsImageExtension ? "100%" : "100%",
+      maxWidth: "100%",
       // maxHeight: '80%',
       height: "80%",
-      width:
-        (containsImageExtension || (isMobile && !containsImageExtension)) &&
-        "60%",
+    //   width:
+    //     (containsImageExtension || (isMobile && !containsImageExtension)) &&
+    //     "100%",
       overflow: "hidden",
       border: "none",
       padding: 0,

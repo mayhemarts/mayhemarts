@@ -3490,8 +3490,15 @@ body.dark .skill .circle .center-text::before {
   display: block;
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: normal;
-  margin-top: 70px;
+  margin: 60px 0 0 0;
+  line-height: .9;
+}
+.skill .circle .center-text p {
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin: 0 ;
+  line-height: .9;
 }
 body.dark .skill .circle .center-text span {
   color: #ffffff;
@@ -5383,6 +5390,7 @@ body.dark .page-banner {
 }
 .contact form .form-group {
   position: relative;
+  margin-bottom: 26px;
 }
 .contact form .form-group + .form-group {
   margin-top: 1.5rem;

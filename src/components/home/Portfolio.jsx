@@ -1062,7 +1062,7 @@ const Portfolio = () => {
 									<motion.div
 										key={portfolio?.id}
 										style={{ transformOrigin: "left bottom" }}
-										className="col-6 col-md-4"
+										className="col-6 col-md-4 portfolio-item"
 										layout
 										initial={{ opacity: 0, rotate: -20 }}
 										animate={{ opacity: 1, rotate: 0 }}
@@ -1097,7 +1097,7 @@ const Portfolio = () => {
 								) : (
 									<motion.div
 										style={{ transformOrigin: "left bottom" }}
-										className="col-6 col-md-4"
+										className="col-6 col-md-4 portfolio-item"
 										key={portfolio?.id}
 										layout
 										initial={{ opacity: 0, rotate: -20 }}
@@ -1131,10 +1131,10 @@ const Portfolio = () => {
 				containsImageExtension={containsImageExtension}
 			>
 				{selectedVideo && (
-					<div className="h-100 text-center">
-						<div style={{ position: "relative", textAlign:"center", maxWidth:"800px" }}>
+					<div style={{ display:'flex 1', justifyContent:'center' }}>
+						<div style={{ position: "relative", textAlign:"center", width:"100%" }}>
 							<iframe 
-								style={{ position: "relative", padding:'20px' }}
+								style={{ position: "relative", margin:'0 auto', width:"100%", padding:"20px" }}
 								width="800" 
 								height="417" 
 								src={selectedVideo} 
